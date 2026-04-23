@@ -7,10 +7,10 @@ services:
     container_name: mysql-container
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: mydb
-      MYSQL_USER: appuser
-      MYSQL_PASSWORD: apppass
+      DB_HOST: mysql
+      DB_NAME: mydb
+      DB_USER: appuser
+      DB_PASS: apppass
     ports:
         - "3306:3306"
     volumes:
