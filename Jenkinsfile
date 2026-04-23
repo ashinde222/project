@@ -11,7 +11,6 @@ pipeline {
 	stages {
 
 		stage ('Clone repo'){
-
 			git branch: 'Master', url: 'https://github.com/ashinde222/project.git'
 		}
 		stage ('Build War'){
