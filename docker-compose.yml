@@ -22,7 +22,7 @@ services:
     depends_on:
       - mysql
     ports:
-      - "8080:8080"
+      - "8082:8080"
     volumes:
       - ./target:/usr/local/tomcat/webapps
 
